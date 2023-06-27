@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" href="logo.svg">
+    <title>Git Detective</title>
+</head>
+<body>
+    <div class="wrapper flex flex-col items-center bg-[#141D2F] w-[100vw] h-[100vh]" id="wrapper">
+        <div class="header flex justify-between w-[320px] md:w-[450px] lg:w-[720px] text-white mt-14 md:mt-20 lg:mt-24" id="header">
+            <span class="text-white text-xl md:text-2xl lg:text-3xl font-semibold" id="heading">Github Profile Seeker</span>
+        <button id="btnmode" class="font-semibold">Light</i></button>
+        </div>
+        <div class="container1 flex w-[320px] md:w-[450px] lg:w-[720px] bg-[#1E2A47] h-14 lg:h-16 rounded-lg py-1 my-6" 
+         id="container1">
+            <i class="fa-solid fa-magnifying-glass pt-4 lg:pt-5 pl-4 text-[#0079ff]"></i>
+            <input type="text" placeholder="Enter a github username..." class="h-12 lg:h-14 p-3 bg-transparent text-white w-[60%] 
+             md:w-[66%] lg:w-[78%] mx-3" id="input">
+            <button class="bg-[#0079ff] hover:bg-[#074d9e] text-white text-sm lg:text-lg h-10 lg:h-11 mt-1 lg:mt-2 px-2 md:px-3 
+             lg:px-4 rounded-lg lg:mb-3"
+             id="btnSearch">Search</button>
+        </div>
+        <div class="error w-[320px] md:w-[450px] lg:w-[720px] -mt-3 scale-0" id="error">
+            <p class="text-sm text-red-700 relative lg:left-0 lg:top-0 ">Not found</p>
+        </div>
+        <div class="container2 w-[320px] md:w-[450px] lg:w-[720px] text-white bg-[#1E2A47] mt-[10px] p-6 rounded-lg"  
+         id="container2">
+            <div class="upper flex lg:justify-between lg:mr-8">
+                <div class="image w-[75px] md:w-[85px] lg:w-[105px] mb-1 ">
+                    <img src="https://avatars.githubusercontent.com/u/95567641?v=4" alt="" class="rounded-full w-[70px] md:w-[80px] 
+                     lg:w-[100px] scale-110" id="avatar">
+                </div>
+                <div class="pheading ml-3 md:ml-6 lg:ml-0 mb-2 flex flex-col lg:flex-row lg:justify-between">
+                    <div class="lg:w-80 lg:mt-1">
+                        <h1 class="text-white text-lg md:text-xl lg:text-2xl font-semibold" id="pName"></h1>
+                        <h2><a href="" id="profileLink"></a></h2>
+                    </div>
+                    <p class="text-white text-sm lg:mt-6 opacity-90" id="date"></p>
+                </div>
+            </div>
+            <div class="rest lg:ml-[8.9rem] lg:-mt-5">
+                <p class="opacity-75 text-sm md:text-lg lg:text-lg" id="bio"></p>
+
+                <div class="list flex justify-evenly items-center gap-6 text-sm my-3 bg-[#141D2F] p-2 px-4 rounded-lg text-center " 
+                 id="list">
+                    <p>Repos<br> <span class="text-sm lg:text-lg font-semibold" id="repo">0</span> </p>
+                    <p>Follower<br> <span class="text-sm lg:text-lg font-semibold" id="follower"></span> </p>
+                    <p>Following<br> <span class="text-sm lg:text-lg font-semibold" id="following"></span> </p>
+                </div>
+                <div class="details grid grid-cols-1 md:grid-cols-2 text-mg gap-3 mt-4">
+                    <div class="flex gap-4 lg:m-1">
+                        <div><i class="fa-sharp fa-solid fa-location-dot mx-1 text-lg pt-1"></i></div>
+                        <div id="location"></div></div>
+                    <div class="flex gap-2 lg:m-1">
+                        <div><i class="fa-solid fa-link text-lg mx-1 pt-2"></i></div>
+                        <a href="https://zoro.to" id="portfolio"></a>
+                    </div>
+                    <div class="flex gap-4 lg:m-1 lg:my-2">
+                        <div><i class="fa-brands fa-twitter text-lg"></i></div>
+                        <a href="https://twitter.com/Sarthak_Roy_28" id="twitter"></a>  
+                    </div>
+                    <div class="flex gap-5 mt-1 lg:m-1 lg:my-2">
+                        <i class="fa-solid fa-house text-lg pt-1"></i>
+                        <p id="org">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

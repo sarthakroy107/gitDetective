@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.white1{
+  background-color: white;
+  color: #4B6A9B;
+}
+.white2{
+  background-color: #FEFEFE;
+  color: #4B6A9B;
+  box-shadow: 5px 26px 30px -10px  rgba(70, 96, 187, 0.2);
+}
+.white3 {
+  background-color: #FEFEFE;
+  color: black;
+}
